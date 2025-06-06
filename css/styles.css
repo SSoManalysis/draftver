@@ -1,0 +1,299 @@
+/*============ GOOGLE FONT ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap");
+
+/*============ VAR ===============*/
+:root {
+    --first-color: #fff8e9;
+    --second-color: #c33f40;
+    --third-color: #403434;
+    --title-font: "Oswald", "Roboto", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.75rem;
+}
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: 0.875rem;
+    }
+}
+/*============ BASIC ===============*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--first-color);
+    color: var(--second-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+main {
+    margin: 50px;
+}
+
+h1 {
+    font-family: var(--title-font);
+    font-weight: 900;
+    padding-top: 3rem;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+a {
+    color: var(--third-color);
+    font-weight: 600;
+}
+
+a:hover {
+    color: #d86565;
+}
+
+.rev-a {
+    color: #dddddd;
+    font-weight: 400;
+}
+
+.rev-a:hover {
+    color: #dfb2b2;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.highlight_text {
+    color: var(--third-color);
+    font-weight: 600;
+}
+
+.rev-highlight_text {
+    color: #ffe76f;
+    font-weight: 600;
+}
+
+/*============ SECTION ===============*/
+
+section {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-title {
+    position: relative;
+    font-family: var(--title-font);
+    color: var(--second-color);
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+/*============ HOME ===============*/
+
+.home {
+    position: relative;
+    row-gap: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+.landing_img1 {
+    position: absolute;
+    transform: rotate(-210deg);
+    top: -30%;
+    left: -10%;
+    width: 150px;
+    border: 2px solid var(--second-color);
+    border-radius: 3px;
+    z-index: -9999;
+}
+
+.landing_img2 {
+    position: absolute;
+    transform: rotate(-40deg);
+    top: -15%;
+    right: -5%;
+    width: 150px;
+    border: 2px solid var(--second-color);
+    border-radius: 3px;
+    z-index: -9999;
+}
+
+.landing_img3 {
+    position: absolute;
+    transform: rotate(-310deg);
+    bottom: -30%;
+    left: -8%;
+    width: 150px;
+    border: 2px solid var(--second-color);
+    border-radius: 3px;
+    z-index: -9999;
+}
+
+.landing_img4 {
+    position: absolute;
+    transform: rotate(-60deg);
+    top: -10%;
+    right: -5%;
+    width: 150px;
+    border: 2px solid var(--second-color);
+    border-radius: 3px;
+    z-index: -9999;
+}
+
+/*============ BACKGROUND RQ ===============*/
+
+.rq {
+    background-color: var(--second-color);
+    border-radius: 20px 20px 0 0;
+    padding: 40px;
+}
+
+.rq .section-title,
+.rq p {
+    color: var(--first-color);
+}
+
+#chart_CandianNews {
+    background-color: var(--first-color);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.info_grid {
+    background-color: var(--first-color);
+    padding: 1.3rem;
+    border-radius: 20px;
+}
+
+.box {
+    margin-top: 15px;
+}
+
+/*============ ALL COMPOSERS ===============*/
+
+.tooltip1 {
+    position: absolute;
+    padding: 8px;
+    background: var(--second-color);
+    color: var(--first-color);
+    border: 0;
+    border-radius: 8px;
+    font-size: 12px;
+}
+.composer {
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 200ms ease;
+}
+
+.composer img {
+    border-radius: 50%;
+}
+
+.composer:hover {
+    transform: scale(1.8);
+}
+
+.lazyload {
+    background: url("images/Magnify@1x-1.0s-200px-200px.gif") no-repeat center
+        center;
+    background-size: cover;
+}
+
+#femaleCount,
+#maleCount {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+}
+
+/*============ FOOTER ===============*/
+.footer {
+    background-color: var(--second-color);
+    color: var(--first-color);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer_orcid {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*============ SCROLLAMA ===============*/
+#scrolly {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#scrolly > * {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+article {
+    position: relative;
+    padding: 0 1rem;
+    max-width: 20rem;
+}
+
+.sticky-thing {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    margin: 0;
+    background-color: #8a8a8a;
+    z-index: 0;
+    top: 12.5vh;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-thing p {
+    padding: 1rem;
+    font-size: 8rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.step {
+    margin: 0 auto 2rem auto;
+    background-color: #3b3b3b;
+    color: #fff;
+}
+
+.step:last-child {
+    margin-bottom: 0;
+}
+
+.step.is-active {
+    background-color: goldenrod;
+    color: #3b3b3b;
+}
+
+.step p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
