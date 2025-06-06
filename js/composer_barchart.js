@@ -46,7 +46,7 @@ window.renderComposerBornYearChart = function() {
 
     // Clear chart area
     const chartSection = document.getElementById('composerBornYearChartSection');
-    chartSection.innerHTML = '<h3 class="section-title">Composer Born Year Diverging Bar Chart (by Century)</h3><div id="bubbleBarChart" style="display: flex; flex-direction: column; align-items: center; overflow-y: auto; width: 100%;"></div>';
+    chartSection.innerHTML = '<h3 class="section-title">Composer by Gender</h3><div id="bubbleBarChart" style="display: flex; flex-direction: column; align-items: center; overflow-y: auto; width: 100%;"></div>';
     const chart = document.getElementById('bubbleBarChart');
 
     // For each century, create a diverging block (oldest at top)
