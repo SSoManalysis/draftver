@@ -110,29 +110,9 @@
         
             </section>
 
-
-            <!------- ALL COMPOSERS ------->
-            <section class="section" id="composerSection">
-                <h3 class="section-title">Composers</h3>
-                <p style="font-size: 10px; font-style: italic; text-align: center; margin-top: -20px;">Images are sourced from Wikimedia automatically</p>
-        
-                <div id="allComposers"></div>
-                <div class="tooltip1" id="tooltip1"></div>
-            </section>
-
-            <!-- Composer Born Year Bar Chart Section (always visible) -->
-            <section class="section" id="composerBornYearChartSection">
-                <h3 class="section-title">Composer Born Year Distribution</h3>
-                <canvas id="composerBornYearChart" height="300" style="display:none;"></canvas>
-            </section>
-
-            <!------- COMPOSERS - GENDER ------->
-            <section class="section">
-                <h3 class="section-title">Gender</h3>
-                
-                <div id="femaleCount"></div>
-                <div id="maleCount"></div>
-                
+            <!-- Composer by century and sex -->
+            <section class="section" id="composerCenturySex">
+                <div id="composerBornYearChartSection"></div>
             </section>
 
             <!-- SCROLL -->
@@ -187,8 +167,7 @@
         <script src="js/lib/bootstrap.min.js"></script>
         <script src="js/lib/chart.js"></script> 
         <script src="js/news.js"></script>
-        <script src="js/composers.js"></script>
-        <script src="js/composer_barchart.js"></script>
+        <script src="js/composer.js"></script>
         <script src="js/script.js"></script>
 
     </body>
